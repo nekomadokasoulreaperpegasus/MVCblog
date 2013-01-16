@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# Don't rewrite any URIs that point to actual files or directories.
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	# Rewrite all other URIs to the index.
+	RewriteRule (.*) index.php [L,QSA]
+</IfModule>
