@@ -1,4 +1,4 @@
-PHP Powered Blow Using MVC
+PHP Powered Blog Using MVC
 =======
 
 A basic blog written using PHP. Utilizes the MVC application architecture to show beginners how to use it.
