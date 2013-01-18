@@ -13,7 +13,7 @@ $post = Model::getPost($id);
 	</head>
 	<body>
 		<!--Check if the post exists.-->
-		<?php if(!is_null($post)):
+		<?php if(!is_null($post) && $id != -1):
 			//Format the time.
 			$date = $post->date;
 			$date = strtotime($date);
